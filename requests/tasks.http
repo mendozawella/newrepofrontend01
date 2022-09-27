@@ -1,0 +1,36 @@
+@api = https://apicorswmendoza.azurewebsites.net/itassets
+
+### Get all tasks
+GET {{api}}
+
+### Create a task
+POST {{api}}
+Content-Type: application/json
+
+{
+    "itemnumber": "",
+    "assetname": "",
+    "description": "",
+    "price": "",
+    "quantity": "",
+    "borrowersname": ""
+}
+
+### GET single task
+GET {{api}}/1
+
+### Updating single task
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "itemnumber": "",
+    "assetname": "",
+    "description": "",
+    "price": "",
+    "quantity": "",
+    "borrowersname": ""
+}
+
+### Deleting single task
+DELETE {{api}}/1
